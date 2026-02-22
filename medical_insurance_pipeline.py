@@ -74,7 +74,7 @@ with DAG(
 
         df = pd.read_csv(CLEAN_PATH)
 
-        engine = create_engine("mysql+pymysql://root:Pass%40123@localhost:3306/medical_insurance")
+        engine = create_engine("mysql+pymysql://root:@@@@localhost:3306/medical_insurance")
 
         df.to_sql("medical_insurance", con=engine, if_exists="replace", index=False)
 
